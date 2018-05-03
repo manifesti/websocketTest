@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OauthtestApplication {
+public class WebsocketTestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OauthtestApplication.class, args);
+		SpringApplication.run(WebsocketTestApplication.class, args);
 	}
 }

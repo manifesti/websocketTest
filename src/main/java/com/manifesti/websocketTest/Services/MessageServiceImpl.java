@@ -17,4 +17,8 @@ public class MessageServiceImpl implements  MessageService {
         repository.save(echoResponse);
 
     }
+    public Iterable<EchoResponse> findAll() {
+        return repository.findAll();
+    }
+
 }

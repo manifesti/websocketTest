@@ -1,8 +1,6 @@
 package com.manifesti.websocketTest.Beans;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -12,6 +10,8 @@ public class EchoResponse {
 	@GeneratedValue
 	Long id;
 
+	@Column
+	@Lob
 	private String message;
 	private String username;
 	private Date date = new Date();
@@ -19,6 +19,7 @@ public class EchoResponse {
     public EchoResponse(String username, String message) {
     	this.message = message;
     	this.username = username;
+    	this.date = new Date();
     }
     public EchoResponse() {
     }

@@ -37,7 +37,8 @@ function sendName() {
 }
 
 function showGreeting(data) {
-    $("#greetings").append("<tr><td><b>" + data.username + "</b> " + data.message + "</td></tr>");
+    var formatdate = new Date(data.date);
+    $("#greetings").append("<tr><td><span style=\"float:right\">"+ formatdate + "</span><b>" + data.username + "</b> " + data.message + "</td></tr>");
 }
 
 $(function () {

@@ -18,7 +18,8 @@ public class MessageServiceImpl implements  MessageService {
 
     }
     public Iterable<EchoResponse> findAll() {
+    	
         return repository.findAll();
+        
     }
-
 }
